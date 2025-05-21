@@ -1,0 +1,99 @@
+body {
+	background: white;
+	width: 100%;
+    min-height: 100vh;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}	
+
+.sfondo {
+background: url("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExc25rMXhmaXgxZ3N3cnV3M2Jnc25jM2w1eGwyeXdma3l4MXV1c2JkayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/6gNkfls12Pgazbg0cQ/giphy.gif") no-repeat;
+background-position: 25% 25%;
+background-size: 40% 35%;
+}
+
+.calcolatrice-wrapper {
+background: url("https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExenNxMHd1aGhxb2lmNDZyd3ZrcGowbWFidTJib2V1MnZ4a2RkdXV5MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/1zKw7WTALJONG2OGgK/giphy.gif") no-repeat;
+background-size: cover;
+padding: 40px;
+border-radius: 12px;
+box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+backdrop-filter: blur(2px);
+overflow: hidden;
+max-width: 400px;
+margin: 40px auto;
+font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+text-align: center;
+}
+
+.calcolatrice-wrapper h2 {
+display: inline-block;
+color: #333;
+font-weight: bold;
+text-shadow: 1px 1px yellow;
+margin-bottom: 25px;
+}
+
+.calcolatrice-wrapper input[type="number"],
+.calcolatrice-wrapper select {
+display: inline-block;
+padding: 10px;
+margin: 10px 0;
+width: 90%;
+text-align: center;
+text-shadow: 2px 2px white;
+color: black;
+border: none;
+outline: none;
+font-size: 1em;
+border-bottom: 1px solid black;
+background: transparent;
+backdrop-filter: blur(2px);
+border-radius: 15px;
+}
+
+.calcolatrice-wrapper button[type="button"] {
+background: linear-gradient(135deg, green, yellow); /* sfondo con gradiente */
+color: white;
+padding: 12px 24px;
+border: none;
+border-radius: 8px;
+font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+font-style: italic; /* rende il testo in corsivo */
+font-size: 16px;
+font-weight: bold;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+transition: all 0.3s ease;
+cursor: pointer;
+margin-top: 15px;
+}
+
+}
+button[type="button"]:hover {
+background: linear-gradient(135deg, yellow, green);
+color: white;
+transform: scale(1.05);
+box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), inset 0 0 10px orange;
+text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+cursor: pointer;
+transition: cursor 0.2s ease;
+}
+
+.calcolatrice-wrapper h3 {
+display: inline-block;
+backdrop-filter: blur(10px);
+border-radius: 15px;
+margin-top: 20px;
+color: black;
+font-weight: bold;
+text-shadow: 1px 1px orange;
+}
+
+ul {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-left: 0.4%;
+	margin-top: 0.4%;
+}

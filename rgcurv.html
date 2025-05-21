@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Raggio && Curvatura</title>
+	<link rel="stylesheet" href="./style.css" />
+	<link rel="stylesheet" href="RaggioCurvatura\style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+	<link rel="icon" href="RaggioCurvatura\su7.jpg" type="image/gif" sizes="16x16" />
+</head>
+<body>
+<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="email.html">E-mail Aziendale</a></li>
+    <li><a href="parallelepipedo.html">Parallelepipedo</a></li>
+    <li><a href="musica.html">Sala Acustica Musicale</a></li>
+	<li><a href="jsex.html">JsEx</a></li>
+	<li><a class="active" href="rgcurv.html">Raggio && Curvatura</a></li>
+	<li><a href="https://aruelangelo.altervista.org/" target="_blank">Ritorna a Comptech</a></li>
+</ul>
+	<center>
+	<form id="fRgCurv">
+	<table>
+	<tr>
+		<td><label for="">Corda</label>
+		<input type="number" id="iCorda" name="iCorda" value="" required>
+		</td>
+		<td>
+		</td>
+	    <td><label for="">Freccia</label>
+		<input type="number" id="iFreccia" name="iFreccia" value="" required>
+		</td>
+	</tr>
+	<tr>
+		<td><input type="button" id="iCalcolo" name="iCalcolo" onclick="funzioneLunga()" value="Calcola">
+		</td>
+		<td id="tcaricamento"><img id="caricamento" src="RaggioCurvatura\rformula.gif">
+		</td>
+		<td><input type="button" id="iDatic" name="iDatic" onclick="DatiCasuali()" value="Dati Casuali">
+		</td>
+	</tr>
+	<tr>
+	    <th colspan="3"><label for="">Raggio</label>
+		<input type="text" id="oRaggio" name="oRaggio" value="" readonly>
+		</th>
+	</tr>
+	<tr>
+		<th colspan="3"><label for="">Arco</label>
+		<input type="text" id="oArco" name="oArco" value="" readonly>
+		</th>
+	</tr>
+	<tr>
+		<th colspan="3"><label for="">Angolo</label>
+		<input type="text" id="oAngolo" name="oAngolo" value="" readonly>
+		</th>
+	</table>
+	</form>
+	</center>
+<script src="RaggioCurvatura\script.js"></script>
+</body>
+</html>

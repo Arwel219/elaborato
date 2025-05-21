@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Parallelepipedo</title>
+	<link rel="stylesheet" href="./style.css" />
+	<link rel="stylesheet" href="Parallelepipedo\style.css">
+	<link rel="icon" href="Parallelepipedo\icon-removebg.png" type="image/gif" sizes="16x16" />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+</head>
+<body>
+<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="email.html">E-mail Aziendale</a></li>
+    <li><a class="active" href="parallelepipedo.html">Parallelepipedo</a></li>
+    <li><a href="musica.html">Sala Acustica Musicale</a></li>
+	<li><a href="jsex.html">JsEx</a></li>
+	<li><a href="rgcurv.html">Raggio && Curvatura</a></li>
+	<li><a href="https://aruelangelo.altervista.org/" target="_blank">Ritorna a Comptech</a></li>
+</ul>
+	<center>
+	<form id="fParallelepipedo">
+	<table>
+	<tr>
+		<th colspan="2"><label for="">Lato AB</label>
+		<input type="number" name="iLatoAB" value="" required>
+		</th>
+	</tr>
+	<tr>
+	    <th colspan="2"><label for="">Lato AA</label>
+		<input type="number" name="iLatoAA" value="" required>
+		</th>
+	</tr>
+	<tr>
+		<th colspan="2"><label for="">Lato AD</label>
+		<input type="number" name="iLatoAD" value="" required>
+		</th>
+	</tr>
+	<tr>
+		<td><input type="button" name="iCalcolo" onclick="SupVol()" value="Superficie && Volume">
+		</td>
+		<td><input type="button" name="iDatic" onclick="DatiCasuali()" value="Dati Casuali">
+		</td>
+	</tr>
+	<tr>
+	    <td><label for="">Superficie</label>
+		<input type="text" name="oSuperficie" value="" readonly>
+		</td>
+		<td><label for="">Volume</label>
+		<input type="text" name="oVolume" value="" readonly>
+		</td>
+	</tr>
+	</table>
+	</form>
+	</center>
+<script src="Parallelepipedo\script.js"></script>
+</body>
+</html>

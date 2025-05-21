@@ -1,0 +1,122 @@
+body {
+	background: url("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXMwNTY4OGpkdnp1Mjc3amIyZXM0c3FtcmZhcDIyMDNyeW95bmxxMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/povenlBAIz14s/giphy.gif") no-repeat;
+	background-position: center;
+    background-size: cover;
+	width: 100%;
+    min-height: 100vh;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-left: 0.4%;
+	margin-top: 0.4%;
+}
+
+table {
+	display: table;
+	overflow: hidden;
+	background: transparent;
+	backdrop-filter: blur(30px);
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 15px;
+    box-shadow: 0px 0px 10px blue,
+                0px 0px 10px blue inset;
+	width: auto;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic; /* rende il testo in corsivo */
+}
+
+td, th {
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+label {
+	display: inline-block;
+	color: white;
+	text-shadow: 1px 1px pink;
+	margin-right: 10px;
+	padding: 3px;
+	border-style: solid;
+	border-width: 1px;
+    box-shadow: 0px 0px 10px purple,
+                0px 0px 10px purple inset;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+label:hover {
+	transform: scale(1.05);
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), inset 0 0 10px purple;
+	cursor: url("3.png"), auto;
+}
+
+input:hover {
+	cursor: url("3.png"), auto;
+}
+
+input[type="number"] {
+	width: 30%;
+	text-align: center;
+	text-shadow: 2px 2px purple;
+	color: pink;
+	border: none;
+	outline: none;
+	font-size: 1em;
+	border-bottom: 1px solid blue;
+	background: transparent;
+	backdrop-filter: blur(30px);
+}
+
+input[type="text"] {
+	width: 30%;
+	text-align: center;
+	text-shadow: 2px 2px purple;
+	color: pink;
+	border: none;
+	outline: none;
+	font-size: 1em;
+	border-bottom: 1px solid blue;
+	background: transparent;
+	backdrop-filter: blur(30px);
+}
+
+input[type="button"] {
+	background: linear-gradient(135deg, #6a11cb, #2575fc); /* sfondo con gradiente */
+	color: white;
+	padding: 12px 24px;
+	border: none;
+	border-radius: 8px;
+	font-family: 'Poppins', sans-serif;
+	font-style: italic; /* rende il testo in corsivo */
+	font-size: 16px;
+	font-weight: bold;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+	transition: all 0.3s ease;
+}
+
+input[type="button"]:hover {
+	background: linear-gradient(135deg, #2575fc, #6a11cb); /* inversione del gradiente per effetto hover */
+	color: white;
+	transform: scale(1.05);
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), inset 0 0 10px yellow;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.active {
+	background-color: #e4e1e1;
+	color: black;
+	text-shadow: 1px 1px pink;
+	font-weight: bold;
+	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2), 0px 0px 10px purple,
+    0px 0px 10px purple inset;; /* Leggera ombra */
+
+	transform: scale(1.05); /* Effetto di zoom */
+	cursor: url("5.png"), auto;
+}

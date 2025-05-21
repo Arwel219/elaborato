@@ -1,0 +1,139 @@
+body {
+    background: url("bg26.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}	
+
+#fRgCurv {
+    background: url("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZHVqNWZ0MHE5aTFyNTNkOXc4dmdwdTE0bGxuajQyN2xoZHBiMWZneiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2lKBWss12I3QrT71oD/giphy.gif") no-repeat;
+    border-radius: 15px;
+    background-position: center;
+    background-size: cover;
+    width: auto;
+}
+
+table {
+  width: 100%; /* si adatta alla container */
+  max-width: 600px; /* limite massimo */
+  table-layout: fixed;
+  height: 300px;
+  max-height: 300px;
+  table-layout: fixed; /* Colonne con larghezza fissa */
+  display: table;
+  overflow: hidden;
+  background: transparent;
+  backdrop-filter: blur(3px);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px #0d7bf1,
+              0px 0px 10px #0d7bf1 inset;
+  font-family: 'Poppins', sans-serif;
+  font-style: italic; /* rende il testo in corsivo */
+}
+
+td, th {
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  /* Puoi impostare larghezza specifica alle colonne se preferisci */
+  /* width: 33%; */
+  word-wrap: break-word; /* per evitare testo troppo lungo */
+}
+
+label {
+  display: inline-block;
+  color: white;
+  text-shadow: 1px 1px cyan;
+  margin-right: 10px;
+  padding: 3px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0px 0px 10px #0d7bf1,
+              0px 0px 10px #0d7bf1 inset;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+label:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), inset 0 0 10px #0d7bf1;
+  cursor: url("8.png"), auto;
+}
+
+input:hover {
+  cursor: url("8.png"), auto;
+}
+
+input[type="number"],
+input[type="text"] {
+  width: 30%;
+  text-align: center;
+  text-shadow: 1px 1px cyan;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  border-bottom: 1px solid #0d7bf1;
+  background: transparent;
+  backdrop-filter: blur(50px);
+}
+
+input[type="button"] {
+  background: linear-gradient(135deg, #0d7bf1, #ddedff); /* sfondo con gradiente */
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-style: italic; /* rende il testo in corsivo */
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+input[type="button"]:hover {
+  background: linear-gradient(135deg, #ddedff, #0d7bf1); /* inversione del gradiente */
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), inset 0 0 10px white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.active {
+  background-color: #e4e1e1;
+  color: black;
+  text-shadow: 1px 1px pink;
+  font-weight: bold;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2), 0px 0px 10px purple,
+              0px 0px 10px purple inset;
+  transform: scale(1.05); /* Effetto di zoom */
+  cursor: url("5.png"), auto;
+}
+
+ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 0.4%;
+  margin-top: 0.4%;
+}
+
+#caricamento {
+  display: none;
+  width: 80%;
+}
+
+#tcaricamento {
+  width: 10%;
+}
+
+img:hover {
+  cursor: pointer;
+}
+

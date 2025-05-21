@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Email Aziendale</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="Form E_Aziendale\style.css">
+  <link rel="icon" href="Form E_Aziendale\icon.png" type="image/gif" sizes="16x16" />
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<section>
+<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a class="active" href="email.html">E-mail Aziendale</a></li>
+    <li><a href="parallelepipedo.html">Parallelepipedo</a></li>
+    <li><a href="musica.html">Sala Acustica Musicale</a></li>
+	<li><a href="jsex.html">JsEx</a></li>
+	<li><a href="rgcurv.html">Raggio && Curvatura</a></li>
+	<li><a href="https://aruelangelo.altervista.org/" target="_blank">Ritorna a Comptech</a></li>
+</ul>
+  <script src="Form E_Aziendale\script.js"></script>
+  <img id="gif" src="email.gif" alt="GIF" />
+  <div class="form-box">
+    <div class="form-value">
+		<form id="EmailAziendale" action="" autocomplete="off">
+		  <h2>Email Aziendale <ion-icon name="mail-outline"></ion-icon></h2>
+		  
+		  <div class="inputbox">
+			<input type="text" id="nome" name="nome" required />
+			<label for="nome">Nome</label>
+			<ion-icon name="id-card"></ion-icon>
+		  </div>
+		  
+		  <div class="inputbox">
+			<input type="text" id="cognome" name="cognome" required />
+			<label for="cognome">Cognome</label>
+			<ion-icon name="id-card"></ion-icon>
+		  </div>
+		  
+		  <div class="inputbox">
+			<input type="text" id="azienda" name="azienda" required />
+			<label for="azienda">Azienda</label>
+			<ion-icon name="business"></ion-icon>
+		  </div>
+		  
+		  <div id="button">
+			<input type="button" onclick="E_M_A()" value="Registrati" />
+		  </div>
+		  
+		  <div class="inputbox">
+			<input type="email" id="email" name="email" required class="input" readonly />
+			<label for="email">Email aziendale</label>
+			<ion-icon name="build"></ion-icon>
+		  </div>
+		</form>
+    </div>
+  </div>
+</section>
+<!-- partial -->
+<script src='https://unpkg.com/ionicons@5.5.2/dist/ionicons.js'></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+body {
+	background: url("./bg13.jpg") no-repeat;
+	background-position: center;
+    background-size: cover;
+	width: 100%;
+	height: auto;
+    min-height: 80vh;
+}
+
+ul {
+	display: inline-block;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 15px;
+	width: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-left: 0.4%;
+	margin-top: 0.4%;
+}
+
+
+li {
+	display: inline-block;
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+    box-shadow: 0px 0px 10px blue,
+                0px 0px 10px blue inset;
+}
+
+li a:hover {
+	background-color: #e4e1e1;
+	color: black;
+	text-shadow: none;
+	font-weight: bold;
+	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2), 0px 0px 10px cyan,
+    0px 0px 10px cyan inset;; /* Leggera ombra */
+
+	transform: scale(1.05); /* Effetto di zoom */
+	cursor: url("5.png"), auto;
+}
+
+.active {
+	background-color: #e4e1e1;
+	color: black;
+	text-shadow: 1px 1px pink;
+	font-weight: bold;
+	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2), 0px 0px 10px purple,
+    0px 0px 10px purple inset;; /* Leggera ombra */
+
+	transform: scale(1.05); /* Effetto di zoom */
+	cursor: url("5.png"), auto;
+}
+
+.scrolling-title-container {
+    position: absolute;
+    top: 10%; /* distanza dal top, regolabile */
+    left: 50%;
+    transform: translateX(-50%);
+	width: 100%; /* larghezza del contenitore, regolabile */
+	text-align: center;
+	z-index: 10; /* assicura che sia sopra altri elementi */
+}
+
+.scrolling-title {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 10px 0;
+    font-size: 2em;
+    color: #fff; /* Colore del testo */
+    background-color: rgba(0, 0, 0, 0.3); /* Sfondo semi trasparente per visibilità */
+    position: relative;
+    font-family: 'Lucida Handwriting';
+	font-weight: bold;
+	text-shadow: 1px 1px pink;
+}
+
+.scrolling-title span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll-left 15s linear infinite;
+	white-space: nowrap;
+        }
+
+@keyframes scroll-left {
+	0% {
+		transform: translateX(0%);
+}
+	100% {
+		transform: translateX(-100%);
+    }
+}
+	
+#sma {
+	width: 15%;
+	height: 15%;
+	position: absolute;
+	bottom: 4%;
+	right: 30%;
+}
+
+#thor {
+	width: 15%;
+	height: 18%;
+	position: absolute;
+	bottom: 30%;
+	right: 28.5%;
+}
+
+#spongebob {
+	width: 12%;
+	height: 16%;
+	position: absolute;
+	bottom: 1%;
+	left: 18%;
+}
+
+#jelly {
+	width: 5%;
+	height: 5%;
+	position: absolute;
+	bottom: 4%;
+	left: 93.5%;
+}
+
+#patrick {
+	width: 12%;
+	height: 16%;
+	position: absolute;
+	bottom: 0;
+	left: 25%;
+}
+
+#boat-mc {
+	width: 4%;
+	height: 7%;
+	position: absolute;
+	bottom: 10%;
+	left: 14%;
+}
+
+img:hover {
+	cursor: url('1.png'), auto;
+}
+

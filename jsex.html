@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Js_Ex</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="JsEx\style.css">
+  <link rel="icon" href="JsEx\calc.jpg" type="image/gif" sizes="16x16" />
+</head>
+<body>
+<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="email.html">E-mail Aziendale</a></li>
+    <li><a href="parallelepipedo.html">Parallelepipedo</a></li>
+    <li><a href="musica.html">Sala Acustica Musicale</a></li>
+	<li><a class="active" href="jsex.html">JsEx</a></li>
+	<li><a href="rgcurv.html">Raggio && Curvatura</a></li>
+	<li><a href="https://aruelangelo.altervista.org/" target="_blank">Ritorna a Comptech</a></li>
+</ul>
+  <script src="JsEx\script.js"></script>
+
+
+<div class="sfondo">
+  <div class="calcolatrice-wrapper">
+    <h2>Calcolatrice JavaScript</h2>
+    <form id="calcoloForm" onsubmit="return false;"> 
+      <input type="number" step="any" id="A" placeholder="Numero 1" required><br>
+      <select id="operatore" required>
+        <option value="+">+</option>
+        <option value="-">−</option>
+        <option value="*">×</option>
+        <option value="/">÷</option>
+      </select><br>
+      <input type="number" step="any" id="B" placeholder="Numero 2" required><br>
+      <button type="button" onclick="JS_Ex()">Calcola</button>
+    </form>
+
+    <h3>Risultato: <span id="risultato"></span></h3>
+  </div>
+</div>
+</body>
+</html>

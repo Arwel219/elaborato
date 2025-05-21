@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sala Acustica Musicale</title>
+	<link rel="icon" href="Sala Acustica Musicale\icon.png" type="image/gif" sizes="16x16">
+	<link rel="stylesheet" href="./style.css" />
+	<link rel="stylesheet" href="Sala Acustica Musicale\style.css">
+</head>
+<body>
+	<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="email.html">E-mail Aziendale</a></li>
+    <li><a href="parallelepipedo.html">Parallelepipedo</a></li>
+    <li><a class="active" href="musica.html">Sala Acustica Musicale</a></li>
+	<li><a href="jsex.html">JsEx</a></li>
+	<li><a href="rgcurv.html">Raggio && Curvatura</a></li>
+	<li><a href="https://aruelangelo.altervista.org/" target="_blank">Ritorna a Comptech</a></li>
+	</ul>
+<h1>Proporzioni Misure Sala Acustica Musicale</h1>
+
+	<form id="fSalaAc">
+		<fieldset>
+		<legend><h2>Dati Sala</h2></legend>
+			<table>
+				<tr>
+				<td><label for="iAltezza">Altezza</label><input type="number" name="iAltezza" value="" required></td>
+				</tr>
+				<tr>
+				<td>
+				  <label for="Sep1">
+					<input type="radio" id="Sep1" name="autore" checked>
+					<span class="custom-radio"></span>Sepmeyer 1
+				  </label><br>
+				  <label for="Sep2">
+					<input type="radio" id="Sep2" name="autore">
+					<span class="custom-radio"></span>Sepmeyer 2
+				  </label><br>
+				  <label for="Sep3">
+					<input type="radio" id="Sep3" name="autore">
+					<span class="custom-radio"></span>Sepmeyer 3
+				  </label><br>
+				  <label for="Llo1">
+					<input type="radio" id="Llo1" name="autore">
+					<span class="custom-radio"></span>Louden 1
+				  </label><br>
+				  <label for="Llo2">
+					<input type="radio" id="Llo2" name="autore">
+					<span class="custom-radio"></span>Louden 2
+				  </label><br>
+				  <label for="Llo3">
+					<input type="radio" id="Llo3" name="autore">
+					<span class="custom-radio"></span>Louden 3
+				  </label><br>
+				  <label for="Volk">
+					<input type="radio" id="Volk" name="autore">
+					<span class="custom-radio"></span>Volkmann
+				  </label><br>
+				  <label for="Bon">
+					<input type="radio" id="Bon" name="autore">
+					<span class="custom-radio"></span>Boner
+				  </label><br>
+				</td>
+				</tr>
+				<tr>
+				<td>
+					<input type="button" value="Calcolo" onclick="SalaAcustica()"></td>
+				</tr>
+				<tr>
+					<td><label for="">Altezza</label>
+					<input type="number" name="oAltezza" value="" readonly>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="">Larghezza</label>
+					<input type="number" name="oLarghezza" value="" readonly>
+					</td>
+				</tr>
+					<td><label for="">Lunghezza</label>
+					<input type="number" name="oLunghezza" value="" readonly>
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+	</form>
+<script src="Sala Acustica Musicale\script.js"></script>
+</body>
+</html>

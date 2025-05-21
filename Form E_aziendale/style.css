@@ -1,0 +1,129 @@
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: url("./bg19.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.form-box {
+  position: relative;
+  width: 400px;
+  height: 500px;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 8px;
+  margin-top: 8px;
+}
+
+h2 {
+  font-size: 2em;
+  color: #fff;
+  text-align: center;
+}
+
+.inputbox {
+  position: relative;
+  margin: 30px 0;
+  width: 310px;
+  border-bottom: 2px solid #fff;
+}
+
+.inputbox label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 1em;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+input:focus ~ label {
+  top: -5px;
+}
+
+input:valid ~ label {
+  top: -5px;
+}
+
+input.has-value ~ label {
+  top: -5px;
+}
+
+.inputbox input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding: 0 35px 0 5px;
+  color: #fff;
+}
+
+.inputbox ion-icon {
+  position: absolute;
+  right: 8px;
+  color: #fff;
+  font-size: 1.2em;
+  top: 20px;
+}
+
+
+#button input {
+  width: 100%;
+  height: 40px;
+  border-radius: 40px;
+  background: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+#button input[type="button"]:hover {
+	background-color: #c5bebc; 
+	transform: translateY(-3px); 
+	}
+	
+#gif {
+	position: absolute; 
+	bottom: 75px; 
+	right: 20px; 
+	width: 5%; 
+	height: 9%; 
+	z-index: 10;
+}
+
+.active {
+	background-color: #e4e1e1;
+	color: black;
+	text-shadow: 1px 1px pink;
+	font-weight: bold;
+	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2), 0px 0px 10px purple,
+    0px 0px 10px purple inset;; /* Leggera ombra */
+
+	transform: scale(1.05); /* Effetto di zoom */
+	cursor: url("5.png"), auto;
+}
