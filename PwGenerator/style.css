@@ -1,0 +1,138 @@
+body {
+    background: url("pw.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}	
+
+
+.formbox {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background: transparent;
+  border-radius: 15px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px orange,
+              0px 0px 10px #0d7bf1 inset;
+}
+
+ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 8px;
+  margin-top: 8px;
+}
+
+h2 {
+  font-size: 2em;
+  color: #fff;
+  text-align: center;
+  text-shadow: 1px 1px yellow;
+}
+
+.inputbox {
+  position: relative;
+  margin: 30px 0;
+  width: auto;
+  border-bottom: 2px solid #203789;
+  text-shadow: 1px 1px cyan;
+  color: yellow;
+}
+
+.inputbox label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 1em;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+input:focus ~ label {
+  top: -5px;
+}
+
+input:valid ~ label {
+  top: -5px;
+}
+
+input.has-value ~ label {
+  top: -5px;
+}
+
+.inputbox input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding: 0 35px 0 5px;
+  color: yellow;
+  text-shadow: 1px 1px cyan;
+  text-align: center;
+}
+
+
+#button input {
+  background: linear-gradient(135deg, #0d7bf1, #bbd30b);
+  color: yellow;
+  position: relative;
+  left: 23%;
+  width: 50%;
+  height: 40px;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+#button input[type="button"]:hover {
+	background: linear-gradient(135deg, #bbd30b, #0d7bf1); 
+    color: yellow;
+	transform: translateY(-3px); 
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), inset 0 0 10px #203789;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+	}
+	
+#gif {
+	position: absolute; 
+	bottom: 75px; 
+	right: 20px; 
+	width: 5%; 
+	height: 9%; 
+	z-index: 10;
+}
+
+.active {
+	background-color: #e4e1e1;
+	color: black;
+	text-shadow: 1px 1px pink;
+	font-weight: bold;
+	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2), 0px 0px 10px purple,
+    0px 0px 10px purple inset;; /* Leggera ombra */
+
+	transform: scale(1.05); /* Effetto di zoom */
+}
+

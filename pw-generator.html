@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PW-Generator</title>
+	<link rel="stylesheet" href="./style.css" />
+	<link rel="stylesheet" href="PwGenerator\style.css">
+	<link rel="icon" href="PwGenerator\icon-removebg.png" type="image/gif" sizes="16x16" />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+</head>
+<body>
+<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="email.html">E-mail Aziendale</a></li>
+    <li><a href="parallelepipedo.html">Parallelepipedo</a></li>
+    <li><a href="musica.html">Sala Acustica Musicale</a></li>
+	<li><a href="jsex.html">JsEx</a></li>
+	<li><a href="rgcurv.html">Raggio && Curvatura</a></li>
+	<li><a href="galleria.html">Galleria</a></li>
+	<li><a class="active" href="pw-generator.html">Pw-Generator</a></li>
+	<li><a href="https://aruelangelo.altervista.org/" target="_blank">Ritorna a Comptech</a></li>
+</ul>
+
+  <div class="formbox">
+		<form id="fPwGenerator" action="" autocomplete="off">
+		  <h2>Generatore di Password</h2>
+		  
+		  <div class="inputbox">
+			<input type="number" id="lpw" name="lpw" required />
+			<label for="nome">Lunghezza di PW desiderata</label>
+		  </div>
+		  
+		  <div id="button">
+			<input type="button" onclick="BuildPass()" value="Genera" />
+		  </div>
+		  
+		  <div class="inputbox">
+			<input type="text" id="pwg" name="pwg" required class="input" readonly />
+			<label for="pwg">PW generata</label>
+
+		  </div>
+		</form>
+  </div>
+<script src="PwGenerator\script.js"></script>
+</body>
+</html>

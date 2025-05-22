@@ -1,0 +1,162 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExamU3Mzh5MzVrdmNnaW51aXJodzF3cXNiejFvN2prbm83bDM0dnB4OCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/K5fXAsXqSWMOk/giphy.gif") no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.box:hover{
+    animation-play-state: paused;
+    
+}
+.box {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    animation: animate 40s linear infinite;
+}
+@keyframes animate {
+    0%{
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100%{
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+.box span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	background: transparent;
+    transform: rotateY(calc(var(--i) * 60deg)) translateZ(173px);
+}
+
+.box span::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    box-shadow: inset 0 0 15px rgba(0,0,0,0.5);
+}
+
+.box span img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	object-fit: cover;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+#w {
+	width: 50%;
+	height: 30%;
+    top: 70%;
+    left: 0;
+}
+
+#sun {
+	background: url("https://png.pngtree.com/background/20250103/original/pngtree-a-photo-capturing-the-sun-as-it-sets-over-horizon-of-picture-image_15888544.jpg") no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+#d {
+	width: 50%;
+	height: 30%;
+    top: 50%;
+    left: 25%;
+}
+
+#dumbo {
+	background: url("https://images.photowall.com/products/62095/fantasy-savanna-animals.jpg?h=699&q=85") no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+#l {
+	width: 100%;
+	height: 100%;
+}
+
+#lion {
+	background: url("https://davideguglielmi.com/sites/default/files/inline-images/paesaggio-savana-africana.jpg") no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+#p {
+	width: 50%;
+	height: 40%;
+    top: 52%;
+    left: 49.5%;
+}
+
+#pumbaco {
+	background: url("https://cdn.shopify.com/s/files/1/0657/3100/2634/files/Papier-peint-africain-Baobab-et-coucher-de-soleil.jpg?v=1707768615") no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+#r {
+	width: 100%;
+	height: 50%;
+	top: 50%;
+}
+
+#run {
+	background: url("https://c.stocksy.com/a/J6B500/z9/1234315.jpg") no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+#t {
+	width: 100%;
+	height: 50%;
+    top: 50%;
+}
+
+#timon {
+	background: url("https://png.pngtree.com/background/20230611/original/pngtree-dirt-road-is-leading-into-the-savanna-near-a-tree-picture-image_3163984.jpg") no-repeat;
+	background-position: center;
+	background-size: cover;
+}
