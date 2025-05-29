@@ -1,0 +1,230 @@
+/* Stile per il background principale della pagina */
+body {
+    background: url("https://motionbgs.com/media/2725/gotham-city-view.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    margin: 0; /* aggiunto per rimuovere margini default */
+    position: relative; /* per eventuale posizionamento assoluto di overlay */
+}
+
+/* Overlay trasparente sopra tutto */
+#overlay {
+  position: fixed; /* copre tutta la finestra */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('rain.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 10; /* sopra gli altri elementi */
+  pointer-events: none; /* permette di cliccare sotto senza bloccare */
+}
+
+/* Titolo */
+h1 {
+    position: absolute;
+    top: 15%;
+    right: 43%;
+    color: white;
+    text-shadow: 1px 1px red;
+}
+
+/* Stile per il form */
+#fLdadi {
+    background: url("https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcWJpZXBvbTFyY3VscWQ2Nng2aDdjc3FrNWozOTZqb244c2F4bDN1MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XBizppqoOIAIH52Zzc/giphy.gif") no-repeat;
+    border-radius: 15px;
+    background-position: center;
+    background-size: cover;
+    width: auto;
+}
+
+/* Stile per la tabella */
+table {
+  width: auto;
+  max-width: 600px;
+  table-layout: fixed;
+  height: 300px;
+  max-height: 300px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px #ff5733, 0px 0px 10px #ff5733 inset;
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+}
+
+/* Celle della tabella */
+td, th {
+  text-align: center;
+  padding: 14px 16px;
+  padding-bottom: 50px;
+  padding-top: 20px;
+  word-wrap: break-word;
+}
+
+/* Label */
+label {
+  display: inline-block;
+  color: white;
+  text-shadow: 1px 1px red;
+  margin-right: 10px;
+  padding: 3px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0px 0px 10px #ff5733, 0px 0px 10px #ff5733 inset;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover sui label */
+label:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), inset 0 0 10px #ff5733;
+}
+
+/* Input numerici e testo */
+input[type="number"],
+input[type="text"] {
+  width: 90%;
+  text-align: center;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  border-bottom: 1px solid #ff5733;
+  background: transparent;
+  backdrop-filter: blur(3px);
+  text-shadow: 1px 1px red;
+}
+
+/* Pulsanti */
+input[type="button"] {
+  background: linear-gradient(135deg, #ff5733, #ddedff);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* Hover sui pulsanti */
+input[type="button"]:hover {
+  background: linear-gradient(135deg, #ddedff, #ff5733);
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), inset 0 0 10px white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+select {
+  display: inline-block;
+  color: white;
+  text-shadow: 1px 1px red;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #ff5733, 0px 0px 10px #ff5733 inset;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: transparent;
+}
+
+option {
+  display: inline-block;
+  color: #ff5733;
+  border-style: solid;
+  border-width: 1px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Immagini nel footer */
+#caricamento {
+  display: none;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+}
+
+#tcaricamento {
+  position: absolute;
+  top: 38%;
+  right: 41%;
+  width: 10%;
+  height: 15%;
+}
+
+/* Overlay vittoria */
+.overlay-finestra {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex; /* Centrare il contenuto */
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Contenuto della finestra */
+.contenuto-finestra {
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  text-shadow: 1px 1px red;
+  text-align: center;
+  max-width: 300px;
+  box-shadow: 0px 0px 10px #ff5733, 0px 0px 10px #ff5733 inset;
+}
+
+/* Pulsante chiudi */
+#chiudiVittoria {
+  margin-top: 15px;
+  padding: 8px 16px;
+  color: red;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#batsign {
+  position: absolute;
+  top: 5.5%;
+  right: 14%;
+  width: 20%;
+  height: 20%;
+}
+
+#dancingbat {
+  position: absolute;
+  top: 45%;
+  right: 20%;
+  width: 10%;
+  height: 15%;
+}
+
+#sigmabat {
+  position: absolute;
+  top: 13%;
+  left: 26%;
+  width: 8%;
+  height: 12%;
+}
+
+img:hover {
+  cursor: pointer;
+}

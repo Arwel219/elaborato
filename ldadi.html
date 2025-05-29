@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lancio di due Dadi con Overlay</title>
+  <!-- Link ai tuoi CSS e font -->
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="LancioDadi/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="icon" href="LancioDadi/icon.png" type="image/gif" sizes="16x16" />
+
+</head>
+<body>
+  <!-- Overlay trasparente sopra tutto -->
+  <div id="overlay"></div>
+
+  <!-- Menu di navigazione -->
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="email.html">E-mail Aziendale</a></li>
+    <li><a href="parallelepipedo.html">Parallelepipedo</a></li>
+    <li><a href="musica.html">Sala Acustica Musicale</a></li>
+    <li><a href="jsex.html">JsEx</a></li>
+    <li><a href="rgcurv.html">Raggio && Curvatura</a></li>
+    <li><a href="galleria.html">Galleria</a></li>
+    <li><a href="pw-generator.html">Pw-Generator</a></li>
+    <li><a class="active" href="ldadi.html">Lancio Dadi</a></li>
+    <li><a href="https://aruelangelo.altervista.org/" target="_blank">Ritorna a Comptech</a></li>
+  </ul>
+
+  <!-- Contenitore principale -->
+  <div id="dcontainer">
+        <h1>Lancio di due dadi</h1>
+        <form id="fLdadi">
+          <table>
+            <tr>
+              <td>
+                <label for="iDado1">Dado 1</label>
+                <input type="number" id="iDado1" name="iDado1" value="" required readonly>
+              </td>
+              <td></td>
+              <td>
+                <label for="iDado2">Dado 2</label>
+                <input type="number" id="iDado2" name="iDado2" value="" required readonly>
+              </td>
+              <td></td>
+              <td>
+                <label for="oSomma">Somma</label>
+                <input type="number" id="oSomma" name="oSomma" value="" required readonly>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <label for="iGiocata">Giocata</label>
+				<select id='iGiocata' name='Giocata'>
+					<option value='2'>2</option>
+					<option value='3'>3</option>
+					<option value='4'>4</option>
+					<option value='5'>5</option>
+					<option value='6'>6</option>
+					<option value='7'>7</option>
+					<option value='8'>8</option>
+					<option value='9'>9</option>
+					<option value='10'>10</option>
+					<option value='11'>11</option>
+					<option value='12'>12</option>
+					<option value='0'>Pari</option>
+					<option value='1'>Dispari</option>
+				</select>
+              </td>
+              <td></td>
+              <td colspan="2">
+                <label for="iPosta">Posta</label>
+                <input type="number" id="iPosta" name="iPosta" min="1" max="100" step="1" value="1" />
+              </td>
+            </tr>
+            <tr>
+              <td id="tcaricamento">
+                <img id="caricamento" src="LancioDadi\cdado.gif" />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="5">
+                <input type="button" id="iLancio" name="iLancio" onclick="funzioneLunga()" value="Lancia i Dadi" />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <label for="oEsito">Esito</label>
+                <input type="text" id="oEsito" name="oEsito" value="" readonly>
+              </td>
+              <td></td>
+              <td colspan="2">
+                <label for="oVincita">Vincita</label>
+                <input type="number" id="oVincita" name="oVincita" readonly>
+              </td>
+            </tr>
+          </table>
+        </form>
+        <!-- Immagini -->
+        <div>
+          <img id="batsign" src="LancioDadi\batsign.gif" alt="Segnale" />
+        </div>
+        <div>
+          <img id="dancingbat" src="LancioDadi\dancingbat.gif" alt="Ballo" />
+        </div>
+        <div>
+          <img id="sigmabat" src="LancioDadi\sigmabat.gif" alt="Batman" />
+        </div>
+  </div>
+
+<!-- Overlay di vittoria -->
+<div id="vittoriaOverlay" class="overlay-finestra" style="display:none;">
+  <div class="contenuto-finestra">
+    <h2>HAI VINTO!!!</h2>
+    <p>Hai vinto <span id="importoVinto"></span> €</p>
+    <button id="chiudiVittoria">Chiudi</button>
+  </div>
+</div>
+
+    <!-- Aggiungi il file audio con loop -->
+    <audio id="vAudio" loop>
+        <source src="LancioDadi\victoryrocky.mp3" type="audio/mp3">
+    </audio>
+
+  <!-- Script -->
+  <script src="LancioDadi\script.js"></script>
+</body>
+</html>
